@@ -32,8 +32,8 @@ class Grid extends Sprite {
         pixelImage.transparent = true;
         pixelImage.simpleRect( 0, 0, pixelImage.width, pixelImage.height, 0xFF000000 );
         TriangleGML.withString( pixelImage, lineGridShape );
-        TriangleGML.withString( pixelShape, arcPie, 10, 0 );
-        var bitmapData = toNmeBitmapData( pixelShape );
+        TriangleGML.withString( pixelImage, arcPie, 10, 0 );
+        var bitmapData = toNmeBitmapData( pixelImage );
         var bitmap = new Bitmap (bitmapData);
 		addChild(bitmap);
 
